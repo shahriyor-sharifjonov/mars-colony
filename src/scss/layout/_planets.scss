@@ -1,0 +1,112 @@
+.planets {
+  &__title {
+    text-align: center;
+    margin-bottom: 40px;
+    @include media(1200) {
+      margin-top: 30px;
+    }
+  }
+  &__wrapper {
+    &:nth-of-type(1) {
+      margin-bottom: 60px;
+      background: #000000;
+      .planets__body {
+        @include media(1200) {
+          flex-direction: column-reverse;
+        }
+      }
+    }
+  }
+  &__inner {
+    padding: 20px 15px;
+  }
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 200px;
+    column-gap: 50px;
+    @include media(1200) {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 70px;
+      margin-bottom: 90px;
+    }
+  }
+  &__content {
+    max-width: 458px;
+    width: 100%;
+  }
+  &__subtitle {
+    margin-bottom: 50px;
+    text-align: left !important;
+    @include media(1200) {
+      text-align: center !important;
+    }
+    @include media(768) {
+      text-align: left;
+    }
+    @include media(576) {
+      font-size: 32px;
+      line-height: 37px;
+      margin-bottom: 20px;
+    }
+  }
+  &__list {
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    @include media(576) {
+      margin-bottom: 40px;
+    }
+  }
+  &__item {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
+    @include media(576) {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 40px 0 10px 0;
+    }
+  }
+  &__p {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    opacity: 0;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    @include media(576) {
+      margin-bottom: 20px;
+    }
+  }
+  &__span {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 300;
+    opacity: 0;
+    font-size: 17px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: left;
+    max-width: 171px;
+    width: 100%;
+  }
+  &__img {
+    @include media(1400) {
+      width: 600px;
+    }
+    @include media(768) {
+      width: 100%;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}

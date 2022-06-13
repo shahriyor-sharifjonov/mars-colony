@@ -1,0 +1,11 @@
+mixin about()
+    section(id="about").section.about
+        .about__body.container
+            .about__content 
+                h2.about__title.title About MarsColony
+                p.about__desc Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war. 
+                a(href="#!").about__btn.btn exlore Polygon
+            .about__img 
+                img(draggable="false" src="@img/about-img.png" alt="") 
+        include cards.pug 
+        +cards

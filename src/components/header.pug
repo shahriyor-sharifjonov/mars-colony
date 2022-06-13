@@ -1,0 +1,26 @@
+mixin header()
+    header.header
+        nav.header__nav.container 
+            a(href="#!").header__logo MarsColony
+            .menu
+                span.menu-btn
+            ul.header__list
+                li.header__li  
+                    a(href="#!").header__link.active Home
+                li.header__li  
+                    a(href="#about").header__link About
+                li.header__li  
+                    a(href="#planets").header__link Planets
+                li.header__li  
+                    a(href="#marscolony").header__link Marscolony
+                li.header__li  
+                    a(href="#partners").header__link Parners
+                li.header__li  
+                    a(href="#security").header__link Security
+            .header__icons 
+                a(href="https://twitter.com").header__icon  
+                    img(draggable="false" src="@img/header-icon-1.svg" alt="")
+                a(href="https://telegram.com").header__icon  
+                    img(draggable="false" src="@img/header-icon-2.svg" alt="")
+                a(href="https://discord.com").header__icon  
+                    img(draggable="false" src="@img/header-icon-3.svg" alt="")  

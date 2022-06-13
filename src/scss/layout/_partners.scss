@@ -1,0 +1,50 @@
+.partners {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  position: relative;
+  padding-bottom: 20px;
+  &__title {
+    text-align: center;
+    margin-bottom: 80px;
+    @include media(768) {
+      margin-bottom: 60px;
+    }
+  }
+  &__body {
+    width: 100%;
+    position: relative;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__txt {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 80px;
+    @include media(992) {
+      flex-direction: column;
+      row-gap: 30px;
+    }
+  }
+  &__img {
+    @include media(1400) {
+      width: 250px;
+    }
+    &:nth-of-type(2) {
+      margin-bottom: 30px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
